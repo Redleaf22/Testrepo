@@ -1,0 +1,143 @@
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ git config user.name
+Redleaf22
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ git config user.email
+vinvenividivici56@gmail.com
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ touch file.txt
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ touch file1.txt
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ git status
+fatal: not a git repository (or any of the parent directories
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2
+$ git init
+Initialized empty Git repository in C:/Git/Git2/.git/
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committ
+        file.txt
+        file1.txt
+
+nothing added to commit but untracked files present (use "git track)
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git add file.txt
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git add .
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+        new file:   file1.txt
+
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git commit -m "First Commit"
+[master (root-commit) d38ede1] First Commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+ create mode 100644 file1.txt
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git add .
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.txt
+        modified:   file1.txt
+
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git commit -m "After Changes"
+[master 4df9794] After Changes
+ 2 files changed, 3 insertions(+)
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git remote add origin https://github.com/Redleaf22/Testrepo.git
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git remote
+origin
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ git push -u origin master
+
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 547 bytes | 17.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Redleaf22/Testrepo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$ ^C
+
+
+
+Me@DESKTOP-F0H9MTB MINGW64 /c/Git/Git2 (master)
+$
